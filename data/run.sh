@@ -1,6 +1,5 @@
 #!/bin/bash
 
-/aleo/data/start &
 
 cd /aleo/snarkOS
 
@@ -27,6 +26,9 @@ while :
 do
   echo "Checking for updates..."
   STATUS=$(git pull)
+
+  killall snarkos
+  /aleo/data/start &
 
   echo "Running the node..."
   
