@@ -27,8 +27,8 @@ do
   echo "Checking for updates..."
   STATUS=$(git pull)
 
-  killall snarkos
-  /aleo/data/start &
+  #killall snarkos
+  #/aleo/data/start &
 
   echo "Running the node..."
   
